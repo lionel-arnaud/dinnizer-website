@@ -1,0 +1,10 @@
+# Generated blog HTML (built on deploy from blog/*.md)
+site/blog/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
