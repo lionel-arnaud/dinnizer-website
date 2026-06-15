@@ -272,23 +272,9 @@
       <p data-i18n="book.intro">Thirty minutes. No deck. A structured conversation about where your operations are today and what they need to look like in six months.</p>
     </div>
 
-    <!-- Cal.com inline embed — activated once CAL_LINK is set in i18n.js -->
-    <div id="cal-inline"></div>
-
-    <!-- Fallback shown when Cal.com is not yet configured -->
-    <div id="cal-fallback" style="display:none;">
-      <!--
-        ╔══════════════════════════════════════════════════════════════════╗
-        ║  TO ACTIVATE THE CALENDAR EMBED:                                ║
-        ║  1. Create a free account at https://cal.com                    ║
-        ║  2. Create a "Discovery call — 30 min" event type               ║
-        ║  3. Copy your booking link (e.g. cal.com/dinnizer/discovery)    ║
-        ║  4. Set CAL_LINK in site/js/i18n.js to your actual username     ║
-        ║     e.g.  const CAL_LINK = "dinnizer/discovery-30min";          ║
-        ║  5. Run ./deploy.sh                                              ║
-        ╚══════════════════════════════════════════════════════════════════╝
-      -->
-      <a href="https://cal.com/dinnizer" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="book.cta">
+    <div class="book-cta-wrap">
+      <a href="https://cloud.dinnizer.com/apps/calendar/appointment/ssdsDFnkCBjL"
+         class="btn btn-primary" target="_blank" rel="noopener" data-i18n="book.cta">
         Schedule a 30-min call
       </a>
       <div class="book-or" data-i18n="book.or">or write to</div>

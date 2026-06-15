@@ -275,12 +275,7 @@ nav{
 #book .section-label{color:#93C6E7;}
 #book .section-header h2{color:#fff;}
 #book .section-header p{color:rgba(255,255,255,.65);}
-#cal-inline{
-  width:100%;min-height:540px;
-  background:var(--surface);border-radius:var(--r);
-  margin-top:2rem;overflow:hidden;
-}
-#cal-fallback{
+.book-cta-wrap{
   margin-top:2rem;
   display:flex;flex-direction:column;align-items:flex-start;gap:1.25rem;
 }
