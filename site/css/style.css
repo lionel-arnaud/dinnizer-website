@@ -251,10 +251,12 @@ nav{
 .about-avatar{
   width:160px;height:160px;border-radius:50%;
   background:linear-gradient(135deg,var(--navy) 0%,var(--sky) 100%);
-  display:flex;align-items:center;justify-content:center;
-  font-size:3rem;font-weight:900;color:rgba(255,255,255,.2);
-  letter-spacing:-.05em;
+  overflow:hidden;
   flex-shrink:0;
+  box-shadow:var(--shadow);
+}
+.about-avatar img{
+  width:100%;height:100%;object-fit:cover;
 }
 .about-name{font-size:1.5rem;font-weight:800;color:var(--navy);margin-bottom:.2rem;}
 .about-role{font-size:.875rem;color:var(--sky);font-weight:500;margin-bottom:1rem;}

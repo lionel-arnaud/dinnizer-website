@@ -93,7 +93,7 @@ const TRANSLATIONS = {
     'vision.blog_link': 'Read the full argument on the blog →',
 
     /* About */
-    'about.label':    'The person',
+    'about.label':    'Lionel Arnaud',
     'about.h2':       'Lionel Arnaud',
     'about.role':     'Operations leader · Biotech & Deep-tech',
     'about.bio1':     'A decade of operational leadership in biotech and deep-tech — including Biomemory (DNA data storage), where he built the company\'s operational infrastructure from early stage. Expert advisor for Agoranov (Paris\'s leading deeptech incubator) and the European Innovation Council EIC Accelerator programme.',
@@ -225,7 +225,7 @@ const TRANSLATIONS = {
     'vision.v6.desc':  "Les résultats positifs sont publiés. Les résultats négatifs sont classés. En recherche managériale comme en médecine, la littérature visible surestime les effets par construction. À ajuster en conséquence.",
     'vision.blog_link': 'Lire l\'argument complet sur le blog →',
 
-    'about.label':   'La personne',
+    'about.label':   'Lionel Arnaud',
     'about.h2':      'Lionel Arnaud',
     'about.role':    'Dirigeant opérationnel · Biotech & Deeptech',
     'about.bio1':    "Dix ans de direction opérationnelle en biotech et deeptech — dont Biomemory (stockage de données sur ADN), où il a construit l'infrastructure opérationnelle de l'entreprise dès les premiers stades. Expert pour Agoranov (premier incubateur deeptech de Paris) et le programme EIC Accelerator du Conseil Européen de l'Innovation.",
