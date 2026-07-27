@@ -260,6 +260,7 @@ nav{
 }
 .about-name{font-size:1.5rem;font-weight:800;color:var(--navy);margin-bottom:.2rem;}
 .about-role{font-size:.875rem;color:var(--sky);font-weight:500;margin-bottom:1rem;}
+.about-linkedin{display:inline-block;font-size:.85rem;font-weight:600;margin-bottom:1rem;}
 .about-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-bottom:1.25rem;}
 .tag{
   background:var(--tag-bg);color:var(--blue);
