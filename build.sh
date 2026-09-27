@@ -64,37 +64,42 @@ cat > "$BLOG_OUT/index.html" << 'HEADER'
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n-title="page.blog">Blog — Dinnizer</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta name="description" content="Perspectives from Lionel ARNAUD on evidence-based management, deep-tech operations, and better business decisions." />
+  <link rel="canonical" href="https://www.dinnizer.com/blog/" />
+  <link rel="stylesheet" href="../css/style.css?v=20260927" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230D2137'/><text y='.85em' font-size='70' x='15'>D</text></svg>" />
 </head>
 <body>
+<a class="skip-link" href="#main-content" data-i18n="nav.skip">Skip to content</a>
 
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="../">Dinnizer<span>.</span></a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="../#services" data-i18n="nav.services">Services</a></li>
-      <li><a href="../#vision"   data-i18n="nav.vision">Vision</a></li>
+      <li><a href="../#vision"   data-i18n="nav.vision">Approach</a></li>
+      <li><a href="../#about" data-i18n="nav.about">Myself</a></li>
       <li><a href="./"          data-i18n="nav.blog">Blog</a></li>
-      <li><a href="../#contact"  data-i18n="nav.contact">Contact</a></li>
+      <li><a href="../#book" class="nav-book" data-i18n="nav.book">Book a call</a></li>
     </ul>
     <div class="nav-actions">
       <div class="lang-toggle" role="group" aria-label="Language">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="fr">FR</button>
+        <button data-lang="en" lang="en" aria-label="English" class="active" aria-pressed="true">EN</button>
+        <button data-lang="fr" lang="fr" aria-label="Français" aria-pressed="false">FR</button>
       </div>
-      <button class="nav-hamburger" aria-label="Menu">
+      <button class="nav-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
 
+<main id="main-content" tabindex="-1">
 <section style="background:var(--navy);color:#fff;padding:4rem 0 3rem;">
   <div class="container">
     <span class="section-label" style="color:#93C6E7;" data-i18n="blog.label">Insights</span>
     <h1 style="font-size:2.25rem;font-weight:800;letter-spacing:-0.02em;margin:.5rem 0 .75rem;color:#fff;" data-i18n="blog.h2">Blog</h1>
-    <p style="color:rgba(255,255,255,.65);max-width:520px;" data-i18n="blog.intro">Long-form articles on evidence-based management, deep-tech operations, and the epistemology of business decisions.</p>
+    <p style="color:rgba(255,255,255,.8);max-width:650px;" data-i18n="blog.intro">Perspectives on evidence-based management, deep-tech operations, and better business decisions. Articles are currently published in English.</p>
   </div>
 </section>
 
@@ -109,7 +114,7 @@ else
   for entry in "${sorted[@]}"; do
     IFS='|' read -r art_date art_slug art_title art_excerpt <<< "$entry"
     cat >> "$BLOG_OUT/index.html" << ITEM
-      <li class="blog-item">
+      <li class="blog-item" lang="en">
         <div class="blog-item-date">$art_date</div>
         <div class="blog-item-title"><a href="$art_slug/">$art_title</a></div>
         <div class="blog-item-excerpt">$art_excerpt</div>
@@ -123,6 +128,8 @@ cat >> "$BLOG_OUT/index.html" << 'FOOTER'
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="container">
     <span data-i18n="footer.copy">© 2026 Dinnizer SAS — All rights reserved.</span>
@@ -131,7 +138,7 @@ cat >> "$BLOG_OUT/index.html" << 'FOOTER'
   </div>
 </footer>
 
-<script src="../js/i18n.js"></script>
+<script src="../js/i18n.js?v=20260927" defer></script>
 </body>
 </html>
 FOOTER

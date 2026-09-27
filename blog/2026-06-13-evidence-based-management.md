@@ -1,90 +1,84 @@
 ---
-title: "The Missing Rigor: Why Evidence-Based Management Falls Short — and What to Do About It"
+title: "Evidence-Based Management: Making Better Decisions Under Uncertainty"
 date: 2026-06-13
-author: Lionel Arnaud
-tags: [epistemology, management, evidence, science]
-excerpt: "Most management practices are adopted on the basis of intuition and narrative. Borrowing from the debate between Evidence-Based Medicine and Science-Based Medicine reveals something uncomfortable: the problem is not a lack of evidence — it is a systematic misreading of the evidence we already have."
+author: Lionel ARNAUD
+tags: [management, evidence, decision-making]
+excerpt: "Good management combines research, company data, and practical judgement. A framework for examining assumptions, testing changes, and deciding when the evidence is strong enough to act."
 lang: en
 ---
 
-The biotech industry runs clinical trials that can cost hundreds of millions of euros, require years of follow-up, and are rejected by regulators if the statistical methodology cannot survive independent scrutiny. The digital startup world launches features based on a single A/B test run over a weekend, adopts management frameworks from bestselling memoirs, and calls it data-driven.
+An operational decision rarely comes with complete evidence. A hiring process needs to change, a cash forecast needs rebuilding, or a new system needs to go live. Waiting for certainty is not an option. Neither is treating a persuasive presentation as proof.
 
-This gap is not merely cultural. It has consequences. And the best conceptual toolkit for closing it does not come from management science — it comes from a debate inside medicine.
+Evidence-based management offers a practical discipline: use the best available information, make uncertainty explicit, and check whether a decision delivers the intended result.
 
-## Evidence-Based Medicine Was a Revolution. It Was Also Not Enough.
+## What Management Can Learn from Medicine
 
-Evidence-Based Medicine (EBM), formalised in the early 1990s, was a genuine intellectual breakthrough. The core idea: clinical decisions should be grounded in the best available research evidence, not in the authority of experts or the traditions of a speciality. Systematic reviews, randomised controlled trials, meta-analyses — these became the gold standard.
+Evidence-based medicine brings research evidence together with clinical expertise and the circumstances of the individual patient. Its original formulation was not a demand to replace judgement with a hierarchy of studies. It was a way to improve judgement by making its basis more explicit.
 
-The problem is that EBM was designed to evaluate plausible treatments. It was not designed to handle the systematic exploitation of its own methodology by advocates of implausible ones.
+The useful parallel in management is to combine relevant research, organisational data, professional experience, and the needs of the people affected. A published finding is one input. Whether it applies to your company is a separate question.
 
-When homeopathy, acupuncture, or certain supplements are subjected to EBM-style meta-analysis, they sometimes appear to "work" — not because they do, but because the EBM toolbox has known failure modes that practitioners of pseudoscience have learned to exploit.
+This means asking about study quality, plausible mechanisms, alternative explanations, and context — not simply whether an article reports a statistically significant result.
 
-Science-Based Medicine (SBM), associated with Steven Novella, David Gorski, and others, adds one critical element: **prior probability**. How plausible is this intervention before we look at the data? The answer to that question changes how we interpret statistical results — radically.
+## Start with the Base Rate
 
-## The Mammogram Problem, and Why It Matters for Management
+Consider a hypothetical diagnostic test with 90% sensitivity and 90% specificity, used in a population where 1% of people have the condition.
 
-Here is a number that surprises most people: a diagnostic test with 90% sensitivity and 90% specificity, when used on a population with a 1% baseline prevalence of the disease, will generate roughly **nine false positives for every true positive**.
+Among 10,000 people, approximately 100 would have the condition. The test would identify 90 of them. Of the remaining 9,900 people, around 990 would receive a false positive. That is **11 false positives for every true positive**; only about 8.3% of positive results would be true positives.
 
-Not because the test is bad. Because when the base rate is low, even excellent tests produce a lot of noise.
+The lesson is not that the test is useless. It is that the starting probability matters when interpreting a result.
 
-This is not a mathematical curiosity. It is the correct way to think about any claim that a given management intervention works. Before asking "what does the study say?", ask: **how likely was this to be true before the study ran?**
+In management, the same discipline encourages useful questions: how often does this problem occur, what usually causes it, and how plausible is the proposed explanation? A surprising finding deserves examination, not automatic acceptance or rejection.
 
-A well-designed RCT showing that a personality test predicts job performance, conducted by the researchers who developed the test and published in a journal with no pre-registration requirement, tells you less than its p-value suggests — because the prior probability that personality tests have strong predictive validity is, based on decades of replication attempts, low.
+## Examine the Strength of the Evidence
 
-## The Failure Modes EBM Cannot Correct on Its Own
+### Publication and selection bias
 
-### Publication bias and p-hacking
+Published success stories can be an incomplete sample. Positive findings may be more likely to appear than null results, while commercial case studies may emphasise favourable outcomes.
 
-Positive results are published. Negative results are filed. The consequence is that the literature systematically overstates effect sizes. P-hacking — adjusting a study's methodology until p < 0.05 — is not a rare occurrence. In fields where incentives are misaligned (academic prestige, consulting fees, speaker engagements), it is structural.
+Look for transparent methods, pre-specified outcomes, independent evaluation, and negative findings. These features do not guarantee a correct conclusion, but they help assess how much confidence to place in it.
 
-The correction is not to distrust all research. It is to weight evidence from pre-registered studies more heavily, to look for meta-analyses that distinguish registered from non-registered trials, and to treat initial effect sizes as upper bounds, not point estimates.
+### Replication and context
 
-### The decline effect
+An initial result may become smaller, disappear, or hold up in later studies. Replication is informative precisely because the outcome is not guaranteed.
 
-The first study of an intervention consistently reports larger effects than subsequent replications. This is the decline effect: as independent teams with varying methodologies test the same hypothesis, the measured effect size trends asymptotically toward its true value — often much lower than the initial reading, sometimes indistinguishable from zero.
+Ask whether an effect has been observed by independent teams and whether the settings resemble your own. A process that helps a large, established company may not suit a 20-person biotech startup.
 
-The practical implication is not cynicism about research. It is patience before adoption. An intervention with a single impressive study behind it is a hypothesis, not a policy. An intervention that has been replicated across populations, settings, and independent research teams with consistent (if smaller) effect sizes is closer to something you can act on.
+### Statistical significance and practical value
 
-### Statistical significance versus clinical significance
+A p-value does not tell you how large an effect is or whether a change is worth implementing. Examine the effect size, uncertainty, costs, and consequences.
 
-Relative risk language conceals absolute magnitudes. "Coffee doubles your risk of disease X" sounds alarming. If the baseline risk is 0.1%, the absolute increase is 0.1 percentage point. Not alarming at all.
+For example, an increase in risk from 0.1% to 0.2% is both a doubling of relative risk and an increase of 0.1 percentage point in absolute risk. Whether it matters depends on the severity of the outcome and the number of people exposed. The numbers alone do not settle the decision.
 
-Management research makes this error constantly. "Diverse teams outperform homogeneous ones by 35%" (a figure from a widely-cited McKinsey report) is meaningless without knowing: 35% of what? Measured how? Over what time horizon? In what type of organisation? With what effect size in pre-registered replications?
+The operational equivalent is straightforward: time saved, errors avoided, and cash preserved matter more than a headline percentage without a clear baseline.
 
-The correct question is never "is the effect statistically significant?" It is "is the effect large enough to matter, and robust enough to replicate?"
+### Combining studies carefully
 
-### Heterogeneity and the limits of meta-analysis
+A meta-analysis can provide a useful synthesis, but pooling results does not remove differences in study quality, populations, or outcome definitions. Examine those differences before applying an average effect to your organisation.
 
-Meta-analyses pool results from multiple studies. When those studies are sufficiently similar in methodology, population, and measurement, pooling is informative. When they are not — when you are averaging apples, oranges, and estimates of how many pieces of fruit the concept of "fruit" contains — the result is statistical noise with a confidence interval.
+## A Practical Decision Process
 
-Much of the management literature suffers from this problem. Studies of "leadership effectiveness" or "organisational culture" measure different constructs with different instruments in different contexts. Aggregating them does not resolve the ambiguity; it launders it.
+1. **Define the problem.** “Our onboarding is poor” is too vague. “New hires wait several days for essential system access” gives you a problem to investigate.
 
-## Applying This to Entrepreneurship
+2. **Record the baseline and assumptions.** Measure the current situation and describe why you expect a proposed change to help. Distinguish observed facts from working assumptions.
 
-The obvious objection: business decisions cannot wait for the clinical trial infrastructure of pharmaceutical development. True. But the conclusion that follows is not "therefore, anything goes." It is "therefore, we must be explicit about our epistemic position."
+3. **Set an outcome and a review date.** For an onboarding change, you might track access readiness, time to the first independent task, and the administrative effort required.
 
-**What this looks like in practice:**
+4. **Run a proportionate test.** A reversible, low-cost change may justify a small pilot. An expensive or difficult-to-reverse decision deserves stronger evidence and closer scrutiny. Where feasible, use a meaningful comparison rather than a before-and-after anecdote alone.
 
-1. **State your priors.** Before implementing a new HR practice, a new performance management framework, or a new incentive structure, write down what you believe the effect will be and why. This is not about prediction — it is about making assumptions visible so they can be updated.
+5. **Review and update.** Decide whether to continue, adapt, or stop. Record unexpected effects as well as the intended result. A successful pilot supports further testing; it does not automatically establish a universal rule.
 
-2. **Distinguish exploration from confirmation.** Piloting a new onboarding process in one team is exploratory. Concluding that it works and rolling it out company-wide on the basis of that pilot is treating exploration as confirmation. Run a proper comparison if the decision is consequential.
+## Rigour Without Paralysis
 
-3. **Look for effect sizes, not testimonials.** The biography of a successful founder is not evidence that their management practices caused their success. Selection bias, survivorship bias, and narrative reconstruction make biography a particularly unreliable source of generalisable lessons.
+The goal is not to reproduce a clinical trial for every business decision. It is to match the strength of the evidence to the stakes of the decision, and to remain honest about what is still uncertain.
 
-4. **Weight replication.** A practice supported by one well-cited study is a conjecture. A practice supported by five independent replications with consistent (if smaller) effect sizes across different organisations is worth serious consideration.
+Good operational leadership needs both action and revision: make the best decision you can now, create a way to learn from it, and change course when the evidence warrants it.
 
-5. **Know the base rates.** Most startups fail. Most management interventions have small effects. Most team dynamics problems are structural, not motivational. Keeping these priors in mind does not make you pessimistic — it makes you calibrated.
+## Further Reading
 
-## What This Is Not
-
-Science-based management is not an argument for inaction. The demand for replicated evidence does not mean waiting indefinitely before making decisions. It means being honest about the confidence level attached to each decision.
-
-It is also not an argument against innovation in management practice. New ideas are generated all the time, and occasionally they turn out to be robustly effective. The point of SBM's methodological rigour is to identify those innovations — not to prevent them from being tested.
-
-The green zone, the grey zone, and the black zone exist in management as in medicine. Some practices have enough evidence behind them to recommend with confidence. Others are genuinely uncertain, and the decision can reasonably depend on context and preference. Others are well-evidenced to be ineffective or harmful — they belong in the bin, regardless of how compelling the TED talk was.
-
-The goal is not to turn scepticism into paralysis. It is to stop mistaking confidence for evidence.
+- Sackett et al. (1996), [Evidence based medicine: what it is and what it isn't](https://doi.org/10.1136/bmj.312.7023.71) — the relationship between research evidence and professional expertise.
+- Wasserstein and Lazar (2016), [The ASA Statement on p-Values: Context, Process, and Purpose](https://doi.org/10.1080/00031305.2016.1154108) — why statistical significance alone is insufficient for a decision.
+- [Cochrane Handbook for Systematic Reviews of Interventions](https://training.cochrane.org/handbook/current) — methods for assessing bias, heterogeneity, and the certainty of evidence.
 
 ---
 
-*Lionel Arnaud is the founder of Dinnizer SAS, a fractional Deputy CEO practice for deep-tech and high-growth ventures. He has spent a decade applying the methodological standards of drug development to operational management. He can be reached at [contact@dinnizer.com](mailto:contact@dinnizer.com).*
+*Lionel ARNAUD provides fractional Deputy CEO services through Dinnizer SAS, supporting operational leadership in deep-tech and biotech. [Discuss your operational priorities](../../#book) or write to [contact@dinnizer.com](mailto:contact@dinnizer.com).*

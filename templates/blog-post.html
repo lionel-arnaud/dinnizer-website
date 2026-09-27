@@ -5,32 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="$excerpt$" />
   <title>$title$ — Dinnizer</title>
-  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/style.css?v=20260927" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230D2137'/><text y='.85em' font-size='70' x='15'>D</text></svg>" />
 </head>
-<body>
+<body data-content-lang="$lang$">
+<a class="skip-link" href="#main-content" data-i18n="nav.skip">Skip to content</a>
 
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="../../">Dinnizer<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="../../#services">Services</a></li>
-      <li><a href="../../#vision">Vision</a></li>
-      <li><a href="../">Blog</a></li>
-      <li><a href="../../#contact">Contact</a></li>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../../#services" data-i18n="nav.services">Services</a></li>
+      <li><a href="../../#vision" data-i18n="nav.vision">Approach</a></li>
+      <li><a href="../../#about" data-i18n="nav.about">Myself</a></li>
+      <li><a href="../" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="../../#book" class="nav-book" data-i18n="nav.book">Book a call</a></li>
     </ul>
     <div class="nav-actions">
       <div class="lang-toggle" role="group" aria-label="Language">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="fr">FR</button>
+        <button data-lang="en" lang="en" aria-label="English" class="active" aria-pressed="true">EN</button>
+        <button data-lang="fr" lang="fr" aria-label="Français" aria-pressed="false">FR</button>
       </div>
-      <button class="nav-hamburger" aria-label="Menu">
+      <button class="nav-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </nav>
 
+<main id="main-content" tabindex="-1">
 <header class="post-header">
   <div class="container">
     <a href="../" class="post-back">← Blog</a>
@@ -47,15 +50,16 @@
 <article class="post-body">
 $body$
 </article>
+</main>
 
 <footer>
   <div class="container">
-    <span>© 2026 Dinnizer SAS — All rights reserved.</span>
+    <span data-i18n="footer.copy">© 2026 Dinnizer SAS — All rights reserved.</span>
     &nbsp;·&nbsp;
     <a href="mailto:contact@dinnizer.com">contact@dinnizer.com</a>
   </div>
 </footer>
 
-<script src="../../js/i18n.js"></script>
+<script src="../../js/i18n.js?v=20260927" defer></script>
 </body>
 </html>

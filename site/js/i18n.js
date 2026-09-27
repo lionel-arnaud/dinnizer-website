@@ -1,331 +1,294 @@
-/* Dinnizer — bilingual EN/FR toggle. No dependencies. */
-
+/* Dinnizer — bilingual EN/FR content and progressive enhancement. */
 const TRANSLATIONS = {
   en: {
-    /* Nav */
-    'nav.services':  'Services',
-    'nav.vision':    'Vision',
-    'nav.blog':      'Blog',
-    'nav.book':      'Book a call',
-
-    /* Hero */
-    'hero.label':    'Fractional Deputy CEO · Deep-tech · Biotech',
-    'hero.h1a':      'You built the technology.',
-    'hero.h1b':      "I'll build the company around it.",
-    'hero.sub':      'Finance, HR, Legal, Admin, IT, and Regulatory — owned and delivered. Not advised.',
-    'hero.cta1':     'Book a discovery call',
-    'hero.cta2':     'See what I cover →',
-
-    /* Metrics strip */
+    'nav.services': 'Services',
+    'nav.vision': 'Approach',
+    'nav.about': 'Myself',
+    'nav.blog': 'Blog',
+    'nav.book': 'Book a call',
+    'nav.skip': 'Skip to content',
+    'hero.label': 'Fractional Deputy CEO · Deep-tech · Biotech',
+    'hero.h1a': 'You built the technology.',
+    'hero.h1b': 'I’ll build the company around it.',
+    'hero.sub': 'Hands-on operational leadership for growing deep-tech and biotech companies. I work alongside your CEO to manage finance, people, systems, and day-to-day execution — on a part-time basis.',
+    'hero.cta1': 'Book a discovery call',
+    'hero.cta2': 'Explore my services →',
     'metrics.m1.n': '10+',
-    'metrics.m1.l': 'years in deep-tech ops',
-    'metrics.m2.n': '3–36',
-    'metrics.m2.l': 'month mandates',
+    'metrics.m1.l': 'years in deep-tech operations',
+    'metrics.m2.n': '3+',
+    'metrics.m2.l': 'months per engagement',
     'metrics.m3.n': 'A→C',
-    'metrics.m3.l': 'series covered',
-    'metrics.m4.n': '100%',
-    'metrics.m4.l': 'operational ownership',
-
-    /* Problem */
+    'metrics.m3.l': 'Series A to C focus',
+    'metrics.m4.n': 'FR / EN',
+    'metrics.m4.l': 'bilingual collaboration',
     'problem.label': 'Why it matters',
-    'problem.h2':    'Operations don\'t run themselves. But they shouldn\'t run you either.',
-    'problem.intro': 'Every month a founder spends on payroll, compliance, vendor negotiations, and IT firefighting is a month not spent on the product, the science, or the market. The cost is invisible — until it isn\'t.',
-    'problem.p1.title': 'Finance consumes founders',
-    'problem.p1.desc':  'Cash flow gaps, CAC accounting, statutory filings, grant reporting — individually manageable, collectively exhausting. One missed BPI reporting deadline costs more than six months of a fractional CFO.',
-    'problem.p2.title': 'Regulatory and legal drift',
-    'problem.p2.desc':  'IP not registered at the right moment. A KBIS anomaly spotted in a data room. A contractor misclassified. In deep-tech, the operational fabric of the company is also its valuation narrative.',
-    'problem.p3.title': 'The headcount dilemma',
-    'problem.p3.desc':  'A full-time Deputy CEO is expensive and hard to reverse. A consultant gives advice you have to implement yourself. A fractional operator takes ownership — and hands it back when the company is ready.',
-
-    /* Services */
-    'services.label':  'Scope of work',
-    'services.h2':     'Everything between the product and the cap table',
-    'services.intro':  'I take full ownership of the internal functions that don\'t generate revenue but determine survival. Reporting to the CEO, accountable for results.',
+    'problem.h2': 'Operations need leadership. They shouldn’t need all of your time.',
+    'problem.intro': 'As your company grows, payroll, cash planning, contracts, and systems need dedicated attention. I take responsibility for the agreed operational scope so you can focus on your technology, customers, and next stage of growth.',
+    'problem.p1.title': 'Financial visibility',
+    'problem.p1.desc': 'Cash forecasts, budgets, and grant reporting need to stay current. Build a reliable view of your runway and commitments, with clear ownership of financial deadlines.',
+    'problem.p2.title': 'Operational readiness',
+    'problem.p2.desc': 'Contracts, intellectual property, and corporate records need attention before a funding round or audit. Coordinate the right specialists and keep critical obligations on track.',
+    'problem.p3.title': 'Leadership at the right scale',
+    'problem.p3.desc': 'You may need experienced operational leadership before a full-time executive makes sense. A fractional Deputy CEO joins your team with an agreed scope, time commitment, and handover plan.',
+    'services.label': 'Scope of work',
+    'services.h2': 'The operations behind your next stage of growth',
+    'services.intro': 'We agree the priorities together. I lead delivery, report directly to the CEO, and coordinate your team and specialist advisers across the functions you need.',
     'services.s1.title': 'Finance & Cash Management',
-    'services.s1.desc':  'Cash flow modelling and forecasting. P&L supervision. Purchasing optimisation. CapEx planning. Statutory accounts coordination. Bank relationships.',
+    'services.s1.desc': 'Cash forecasts, budgets, and financial reporting. Purchasing and investment planning. Coordination with accountants and banking partners.',
     'services.s2.title': 'Non-dilutive Funding',
-    'services.s2.desc':  'BPI France, ANR, EIC Accelerator, Horizon Europe, CIR/CII — sourcing, structuring, writing, and reporting. From first application to audit defence.',
+    'services.s2.desc': 'Bpifrance, ANR, EIC Accelerator, Horizon Europe, and CIR/CII. Funding opportunities, application coordination, reporting, and audit preparation.',
     'services.s3.title': 'HR & People Operations',
-    'services.s3.desc':  'Hiring process design. Employment contracts under French labour law. Onboarding. Performance frameworks. Payroll coordination. Labour compliance and social audit prep.',
+    'services.s3.desc': 'Hiring processes, onboarding, and performance reviews. Employment administration under French labour law, payroll coordination, and support from specialist advisers.',
     'services.s4.title': 'Legal, IP & Regulatory',
-    'services.s4.desc':  'Contract lifecycle management. IP filing strategy and portfolio oversight. Regulatory pathways (CE marking, FDA pre-submission). Fundraising legal coordination.',
+    'services.s4.desc': 'Contract management, IP portfolio oversight, and fundraising preparation. Coordination with legal counsel, patent attorneys, and regulatory specialists.',
     'services.s5.title': 'Administration & Office',
-    'services.s5.desc':  'Back-office structuring. Vendor and supplier management. Facilities and leases. Insurance. Corporate housekeeping (KBIS, statutes, AGM).',
+    'services.s5.desc': 'Back-office organisation, suppliers, facilities, and insurance. Corporate records, filing deadlines, and preparation of shareholder meetings.',
     'services.s6.title': 'Technology & IT',
-    'services.s6.desc':  'Infrastructure and sysadmin. Security baselines and access management. AI workflow automation. Data governance and GDPR compliance.',
-    'services.s7.title': 'ERP & Tooling',
-    'services.s7.desc':  'Odoo implementation and customisation. CRM, PLM, QMS integration. Tool rationalisation and migration planning.',
-    'services.s8.title': 'Team & Contractor Management',
-    'services.s8.desc':  'Org design and hiring roadmap. OKR framework implementation. Subcontractor supervision and audit. Supplier KPIs. Management of management.',
-    'services.runbuild':  '<strong>Run & Build — simultaneously.</strong> Operational continuity (run) and transformation projects (build) managed in parallel. Because a company at Series B cannot stop while it reorganises.',
-
-    /* How it works */
-    'how.label':    'Engagement model',
-    'how.h2':       'Three steps to embedded leadership',
-    'how.step1.n':  '01',
-    'how.step1.t':  'Discovery',
-    'how.step1.d':  'A 30-minute call to map your operational gaps, priorities, and timeline. No pitch, no deck — a structured diagnostic conversation.',
-    'how.step2.n':  '02',
-    'how.step2.t':  'Scoped proposal',
-    'how.step2.d':  'A written proposal specifying scope, KPIs, reporting structure, and duration. Fixed mandate or rolling monthly — your choice.',
-    'how.step3.n':  '03',
-    'how.step3.t':  'Embedded mandate',
-    'how.step3.d':  'I join the team, take ownership of the agreed functions, and operate with the authority of a C-suite member. Weekly reporting to the CEO.',
-    'how.note':     'Typical mandate length: 3 to 18 months. I carry a maximum of two mandates simultaneously to ensure full availability.',
-
-    /* Vision */
-    'vision.label':  'Editorial line',
-    'vision.h2':     'Evidence-based management',
-    'vision.intro':  'Management is full of practices selected on the basis of narrative, intuition, and peer pressure. I apply to operational decisions the same standard I would apply to a clinical study: what does the replicated evidence actually say?',
-    'vision.manifesto': 'This is not a rejection of judgement — it is a demand that judgement be calibrated. Assumptions stated. Priors updated. Effect sizes checked against operational relevance, not just statistical significance.',
-    'vision.v1.title': 'Effect sizes, not anecdotes',
-    'vision.v1.desc':  'Business biographies are not evidence. Case studies are hypotheses at best. Interventions are evaluated on replicated effect sizes across heterogeneous samples.',
-    'vision.v2.title': 'No unfalsifiable frameworks',
-    'vision.v2.desc':  'Personality assessments with no predictive validity. Transformation programmes with no measurable outcome. Culture decks accountable to no one. These do not have a place here.',
-    'vision.v3.title': 'Bayesian updating',
-    'vision.v3.desc':  'Prior beliefs are stated explicitly and revised proportionally to the strength of incoming evidence. The first study is a hypothesis. A tenth independent replication is closer to policy.',
-    'vision.v4.title': 'Clinical significance over p-values',
-    'vision.v4.desc':  '"Statistically significant" does not mean operationally meaningful. A 0.1% absolute risk increase that "doubles your risk" is not worth reorganising your company for.',
-    'vision.v5.title': 'Replication before adoption',
-    'vision.v5.desc':  'Initial effect sizes systematically decline with subsequent replications (the decline effect). We do not implement practices because a TED talk was persuasive.',
-    'vision.v6.title': 'Publication bias is the baseline',
-    'vision.v6.desc':  'Positive results are published. Negative results are filed. In management research as in medicine, the visible literature overstates effects by construction. Adjust accordingly.',
-    'vision.blog_link': 'Read the full argument on the blog →',
-
-    /* About */
-    'about.label':    'Myself',
-    'about.h2':       'Lionel Arnaud',
-    'about.role':     'Operations leader · Biotech & Deep-tech',
-    'about.linkedin': 'View LinkedIn profile',
-    'about.bio1':     'A decade of operational leadership in biotech and deep-tech — including Biomemory (DNA data storage), where he built the company\'s operational infrastructure from early stage. Expert advisor for Agoranov (Paris\'s leading deeptech incubator) and the European Innovation Council EIC Accelerator programme.',
-    'about.bio2':     'Trained in clinical trial design (Johns Hopkins University) and computer science (Harvard CS50X), with a postgraduate degree from Université Paris Dauphine. The same epistemological rigour he applies in scientific due diligence — distinguishing prior probability, effect size, and replication from statistical noise — is what he brings to operational mandates.',
-    'about.bio3':     'Bilingual French–English. Based in Paris. Available for remote and on-site mandates across France and Europe.',
-
-    /* Booking */
-    'book.label':   'Next step',
-    'book.h2':      'Book a discovery call',
-    'book.intro':   'Thirty minutes. No deck. A structured conversation about where your operations are today and what they need to look like in six months.',
-    'book.cta':     'Schedule a 30-min call',
-    'book.or':      'or write to',
-    'book.note':    'I respond within one business day. Calls available in French and English.',
-
-    /* FAQ */
-    'faq.label':    'Questions',
-    'faq.h2':       'Common questions',
-    'faq.q1':       'Who is a typical client?',
-    'faq.a1':       'Series A to C deep-tech or biotech ventures — typically 10 to 80 people — where the CEO is doing operational work that should be delegated but where hiring a full-time C-suite is premature or undesirable.',
-    'faq.q2':       'What is the minimum engagement?',
-    'faq.a2':       '3 months. Most mandates run 9 to 18 months. The goal is always to make myself redundant: build the process, train the team, hand over.',
-    'faq.q3':       'Can you take on more than one company at a time?',
-    'faq.a3':       'Maximum two mandates simultaneously, to preserve genuine availability. One mandate in deep focus is possible on request.',
-    'faq.q4':       'Do you work remotely?',
-    'faq.a4':       'Both. I embed on-site for the first weeks of any mandate and adapt to the rhythm of the team thereafter. On-site availability: Paris region. Remote: anywhere.',
-    'faq.q5':       'What does "evidence-based" mean concretely?',
-    'faq.a5':       'It means I will not implement a management framework because it is fashionable. I will not recommend a tool because a conference speaker praised it. Decisions are grounded in replicated evidence, stated assumptions, and measurable outcomes. More on the blog.',
-    'faq.q6':       'What does this cost?',
-    'faq.a6':       'Pricing is structured as a monthly retainer proportional to scope and time commitment. Contact me for a scoped proposal — the discovery call is free.',
-
-    /* Footer */
-    'footer.copy':   '© 2026 Dinnizer SAS — All rights reserved.',
-
-    /* Blog page */
-    'blog.label':   'Insights',
-    'blog.h2':      'Blog',
-    'blog.intro':   'Long-form articles on evidence-based management, deep-tech operations, and the epistemology of business decisions.',
-    'blog.empty':   'No articles yet.',
-
-    /* Nav blog back */
+    'services.s6.desc': 'Infrastructure, access management, and security practices. Workflow automation, including AI where useful, and coordination of data protection requirements.',
+    'services.s7.title': 'ERP & Business Systems',
+    'services.s7.desc': 'Odoo implementation and customisation. Integration of customer, product, and quality management systems. Tool selection and migration planning.',
+    'services.s8.title': 'Teams & Delivery Partners',
+    'services.s8.desc': 'Organisation design, hiring plans, and clear responsibilities. Support for team leads, shared objectives, and oversight of suppliers and subcontractors.',
+    'services.runbuild': '<strong>Keep today running. Build for tomorrow.</strong> Day-to-day operations and improvement projects move forward together, so your company can evolve without losing momentum.',
+    'how.label': 'Working together',
+    'how.h2': 'A clear path from priorities to execution',
+    'how.step1.n': '01',
+    'how.step1.t': 'Discovery',
+    'how.step1.d': 'A 30-minute conversation about your company, operational priorities, and timeline. We assess whether the engagement is a good fit.',
+    'how.step2.n': '02',
+    'how.step2.t': 'Scope and proposal',
+    'how.step2.d': 'A written proposal sets out responsibilities, objectives, weekly availability, fees, and review points. You know what to expect before we start.',
+    'how.step3.n': '03',
+    'how.step3.t': 'Integration and delivery',
+    'how.step3.d': 'I join your team, lead the agreed functions, and report weekly to the CEO. Decision-making authority and escalation routes are defined at the outset.',
+    'how.note': 'Engagements start at three months. Scope, availability, and review points are agreed in advance. I work with no more than two companies at a time.',
+    'vision.label': 'How I make decisions',
+    'vision.h2': 'Evidence-based management',
+    'vision.intro': 'Good decisions combine the best available research, your company’s data, and practical experience. I make assumptions explicit, measure what matters, and adjust when the evidence changes.',
+    'vision.manifesto': 'Be clear about what we know, what we assume, and what would change our minds. Act with the evidence available — then check the result.',
+    'vision.v1.title': 'Results, not anecdotes',
+    'vision.v1.desc': 'A success story can suggest an idea, but it does not establish cause and effect. I look for measurable outcomes and evidence that applies to your situation.',
+    'vision.v2.title': 'Testable objectives',
+    'vision.v2.desc': 'Before introducing a process or tool, we define the problem, the expected benefit, and how to assess it. A framework needs to earn its place.',
+    'vision.v3.title': 'Update the assumptions',
+    'vision.v3.desc': 'Plans start with assumptions about costs, timelines, and behaviour. We make them visible and revise them as new information arrives.',
+    'vision.v4.title': 'Practical significance',
+    'vision.v4.desc': 'A statistically significant result may still have little business value. We weigh the size of the benefit against cost, effort, uncertainty, and risk.',
+    'vision.v5.title': 'Test before scaling',
+    'vision.v5.desc': 'Independent replication builds confidence. Where evidence is limited, a proportionate pilot and clear review criteria are better than an unqualified rollout.',
+    'vision.v6.title': 'Look for missing evidence',
+    'vision.v6.desc': 'Published successes do not tell the whole story. I look for negative findings, conflicts of interest, and limits in the data before drawing conclusions.',
+    'vision.blog_link': 'Explore the thinking behind this approach →',
+    'about.label': 'Myself',
+    'about.h2': 'Lionel ARNAUD',
+    'about.role': 'Operations leader · Biotech & Deep-tech',
+    'about.linkedin': 'View my LinkedIn profile ↗',
+    'about.tag1': 'Operational leadership',
+    'about.tag2': 'Non-dilutive funding',
+    'about.tag3': 'Business systems',
+    'about.tag4': 'Paris · France & Europe',
+    'about.bio1': 'I bring a decade of operational leadership in biotech and deep-tech, including building operational infrastructure at Biomemory, a DNA data storage company. My experience also includes expert advisory work for Agoranov and the European Innovation Council’s EIC Accelerator programme.',
+    'about.bio2': 'A postgraduate degree from Université Paris Dauphine and training in clinical trial design at Johns Hopkins University and computer science through Harvard’s CS50x inform my approach: connect scientific rigour with practical execution.',
+    'about.bio3': 'Based in Paris, I work in French and English, remotely and on site across France and Europe.',
+    'book.label': 'Next step',
+    'book.h2': 'Let’s talk about your priorities',
+    'book.intro': 'Tell me where your company is today and what needs to change. In 30 minutes, we can discuss your priorities and whether I can help. No preparation required.',
+    'book.cta': 'Book a free 30-minute call',
+    'book.or': 'or email me',
+    'book.note': 'Calls in French or English. I respond to enquiries within one business day.',
+    'faq.label': 'Questions',
+    'faq.h2': 'Before we work together',
+    'faq.q1': 'Who is this for?',
+    'faq.a1': 'Deep-tech and biotech companies from Series A to C, typically with 10 to 80 people. The CEO needs to delegate operational leadership, but a full-time executive hire may not yet be the right fit.',
+    'faq.q2': 'What is the minimum engagement?',
+    'faq.a2': 'The minimum engagement is three months. Duration depends on your priorities and is agreed in the proposal. The aim is to build processes, support your team, and prepare a clear handover.',
+    'faq.q3': 'Can you work with more than one company?',
+    'faq.a3': 'I work with no more than two companies at a time. Weekly availability is agreed before the engagement starts. An exclusive engagement can be discussed if needed.',
+    'faq.q4': 'Do you work remotely?',
+    'faq.a4': 'Both remotely and on site. I am based in Paris and work across France and Europe, with travel and team presence agreed for each engagement.',
+    'faq.q5': 'What does evidence-based mean in practice?',
+    'faq.a5': 'I combine relevant research with your company’s data and practical experience. We state assumptions, define measurable outcomes, and review decisions when new information appears.',
+    'faq.q6': 'How is the engagement priced?',
+    'faq.a6': 'A monthly retainer reflects the agreed scope and time commitment. You receive a written proposal after our initial conversation. The discovery call is free.',
+    'footer.copy': '© 2026 Dinnizer SAS — All rights reserved.',
+    'blog.label': 'Insights',
+    'blog.h2': 'Blog',
+    'blog.intro': 'Perspectives on evidence-based management, deep-tech operations, and better business decisions. Articles are currently published in English.',
+    'blog.empty': 'No articles yet.',
     'nav.back_blog': '← Blog',
-
-    /* Page titles */
-    'page.home':    'Dinnizer — Fractional Deputy CEO for deep-tech',
-    'page.blog':    'Blog — Dinnizer',
+    'page.home': 'Dinnizer — Fractional Deputy CEO for deep-tech',
+    'page.blog': 'Blog — Dinnizer',
   },
-
   fr: {
     'nav.services': 'Services',
-    'nav.vision':   'Vision',
-    'nav.blog':     'Blog',
-    'nav.book':     'Prendre RDV',
-
-    'hero.label':   'Deputy CEO freelance · Deeptech · Biotech',
-    'hero.h1a':     'Vous avez construit la technologie.',
-    'hero.h1b':     "Je construis l'entreprise autour.",
-    'hero.sub':     'Finance, RH, Juridique, Admin, IT, Réglementaire — pris en charge et livrés. Pas simplement conseillés.',
-    'hero.cta1':    'Réserver un appel découverte',
-    'hero.cta2':    'Voir ce que je couvre →',
-
+    'nav.vision': 'Approche',
+    'nav.about': 'À propos',
+    'nav.blog': 'Blog',
+    'nav.book': 'Prendre RDV',
+    'nav.skip': 'Aller au contenu',
+    'hero.label': 'Direction générale à temps partagé · Deeptech · Biotech',
+    'hero.h1a': 'Vous avez construit la technologie.',
+    'hero.h1b': 'Je construis l’entreprise autour.',
+    'hero.sub': 'Un pilotage opérationnel concret pour les entreprises deeptech et biotech en croissance. Aux côtés du dirigeant, je prends en charge les finances, les équipes, les outils et l’exécution au quotidien, à temps partagé.',
+    'hero.cta1': 'Réserver un appel découverte',
+    'hero.cta2': 'Découvrir mes services →',
     'metrics.m1.n': '10+',
-    'metrics.m1.l': "ans en opérations deeptech",
-    'metrics.m2.n': '3–36',
-    'metrics.m2.l': 'mois de mandat',
+    'metrics.m1.l': 'ans de pilotage opérationnel',
+    'metrics.m2.n': '3+',
+    'metrics.m2.l': 'mois minimum par mission',
     'metrics.m3.n': 'A→C',
-    'metrics.m3.l': 'séries couvertes',
-    'metrics.m4.n': '100%',
-    'metrics.m4.l': 'responsabilité opérationnelle',
-
+    'metrics.m3.l': 'entreprises de série A à C',
+    'metrics.m4.n': 'FR / EN',
+    'metrics.m4.l': 'collaboration bilingue',
     'problem.label': 'Pourquoi ça compte',
-    'problem.h2':    "Les opérations ne se gèrent pas toutes seules. Mais elles ne devraient pas non plus vous gérer.",
-    'problem.intro': "Chaque mois qu'un fondateur passe sur la paie, la conformité, les négociations fournisseurs et les urgences IT est un mois de moins consacré au produit, à la science ou au marché. Le coût est invisible — jusqu'au moment où il ne l'est plus.",
-    'problem.p1.title': 'La finance consume les fondateurs',
-    'problem.p1.desc':  "Flux de trésorerie, comptabilité des coûts d'acquisition, dépôts statutaires, rapports de subventions — individuellement gérables, collectivement épuisants. Un délai de reporting BPI manqué coûte plus que six mois de DAF fractionnel.",
-    'problem.p2.title': 'Dérive juridique et réglementaire',
-    'problem.p2.desc':  "PI non déposée au bon moment. Une anomalie KBIS relevée en data room. Un prestataire mal qualifié. En deeptech, le tissu opérationnel de l'entreprise est aussi son narratif de valorisation.",
-    'problem.p3.title': 'Le dilemme des effectifs',
-    'problem.p3.desc':  "Un Deputy CEO à temps plein est coûteux et difficile à réversibiliser. Un consultant donne des conseils que vous devez implémenter vous-même. Un opérateur fractionnel prend la responsabilité — et la restitue quand l'entreprise est prête.",
-
-    'services.label': 'Périmètre',
-    'services.h2':    'Tout ce qui se passe entre le produit et le cap table',
-    'services.intro': "Je prends la pleine responsabilité des fonctions internes qui ne génèrent pas de revenus mais conditionnent la survie. Reportant au CEO, engagé sur les résultats.",
+    'problem.h2': 'Faites grandir votre entreprise sans tout porter seul.',
+    'problem.intro': 'Avec la croissance, la paie, la trésorerie, les contrats et les outils demandent un pilotage dédié. Je prends en charge le périmètre convenu pour vous permettre de vous concentrer sur votre technologie, vos clients et votre développement.',
+    'problem.p1.title': 'Une vision financière claire',
+    'problem.p1.desc': 'Prévisions de trésorerie, budgets et suivi des aides : disposez d’une vision à jour de vos ressources et engagements, avec un responsable identifié pour chaque échéance.',
+    'problem.p2.title': 'Des obligations maîtrisées',
+    'problem.p2.desc': 'Contrats, propriété intellectuelle et documents sociaux se préparent avant une levée de fonds ou un audit. Mobilisez les bons spécialistes et gardez la maîtrise des échéances critiques.',
+    'problem.p3.title': 'Une direction adaptée à vos besoins',
+    'problem.p3.desc': 'Vous avez besoin d’un dirigeant opérationnel expérimenté sans nécessairement recruter à temps plein. Une direction à temps partagé apporte un périmètre clair, une disponibilité convenue et un plan de passation.',
+    'services.label': 'Domaines d’intervention',
+    'services.h2': 'Les fonctions qui soutiennent votre croissance',
+    'services.intro': 'Nous définissons ensemble les priorités. Je pilote leur mise en œuvre, rends compte directement au dirigeant et coordonne les équipes et les conseils spécialisés.',
     'services.s1.title': 'Finance & Trésorerie',
-    'services.s1.desc':  "Modélisation et prévision des flux de trésorerie. Supervision du P&L. Optimisation des achats. Planification du CapEx. Coordination des comptes annuels. Relations bancaires.",
-    'services.s2.title': 'Financements non-dilutifs',
-    'services.s2.desc':  "BPI France, ANR, EIC Accelerator, Horizon Europe, CIR/CII — sourcing, montage, rédaction et reporting. Du premier dossier à la défense d'audit.",
-    'services.s3.title': 'RH & Gestion des personnes',
-    'services.s3.desc':  "Conception du processus de recrutement. Contrats de travail (droit du travail français). Onboarding. Dispositifs d'évaluation. Coordination de la paie. Conformité sociale et préparation d'audit.",
+    'services.s1.desc': 'Prévisions de trésorerie, budgets et suivi financier. Achats et planification des investissements. Coordination avec les experts-comptables et les partenaires bancaires.',
+    'services.s2.title': 'Financements non dilutifs',
+    'services.s2.desc': 'Bpifrance, ANR, EIC Accelerator, Horizon Europe et CIR/CII. Identification des dispositifs, coordination des dossiers, suivi des financements et préparation des audits.',
+    'services.s3.title': 'Ressources humaines',
+    'services.s3.desc': 'Recrutement, intégration et évaluation des collaborateurs. Administration du personnel en droit français, coordination de la paie et appui des conseils spécialisés.',
     'services.s4.title': 'Juridique, PI & Réglementaire',
-    'services.s4.desc':  "Gestion du cycle de vie contractuel. Stratégie de dépôt PI et suivi du portefeuille. Parcours réglementaires (marquage CE, pré-soumission FDA). Coordination juridique levée de fonds.",
-    'services.s5.title': 'Administration & Office',
-    'services.s5.desc':  "Structuration du back-office. Gestion des fournisseurs et prestataires. Locaux et baux. Assurances. Secrétariat juridique (KBIS, statuts, AG).",
-    'services.s6.title': 'Technologie & IT',
-    'services.s6.desc':  "Infrastructure et sysadmin. Référentiels de sécurité et gestion des accès. Automatisation par IA. Gouvernance des données et conformité RGPD.",
-    'services.s7.title': 'ERP & Outils',
-    'services.s7.desc':  "Implémentation et personnalisation d'Odoo. Intégration CRM, PLM, QMS. Rationalisation et migration des outils.",
-    'services.s8.title': 'Management équipes & prestataires',
-    'services.s8.desc':  "Design organisationnel et plan de recrutement. Mise en place des OKR. Supervision et audit des sous-traitants. KPIs fournisseurs. Management du management.",
-    'services.runbuild':  "<strong>Run & Build — simultanément.</strong> Continuité opérationnelle (run) et projets de transformation (build) gérés en parallèle. Parce qu'une société en Série B ne peut pas s'arrêter pendant qu'elle se réorganise.",
-
-    'how.label':    "Modèle d'engagement",
-    'how.h2':       'Trois étapes vers un leadership embarqué',
-    'how.step1.n':  '01',
-    'how.step1.t':  'Découverte',
-    'how.step1.d':  "Un appel de 30 minutes pour cartographier vos lacunes opérationnelles, vos priorités et votre calendrier. Pas de pitch, pas de deck — une conversation diagnostique structurée.",
-    'how.step2.n':  '02',
-    'how.step2.t':  'Proposition délimitée',
-    'how.step2.d':  "Une proposition écrite précisant le périmètre, les KPIs, la structure de reporting et la durée. Mandat fixe ou mensuel reconductible — à votre choix.",
-    'how.step3.n':  '03',
-    'how.step3.t':  'Mandat embarqué',
-    'how.step3.d':  "Je rejoins l'équipe, prends la responsabilité des fonctions convenues et opère avec l'autorité d'un membre du comité de direction. Reporting hebdomadaire au CEO.",
-    'how.note':     "Durée de mandat typique : 3 à 18 mois. Je mène au maximum deux mandats simultanément pour garantir une disponibilité réelle.",
-
-    'vision.label':  'Ligne éditoriale',
-    'vision.h2':     'Management fondé sur les preuves',
-    'vision.intro':  "Le management regorge de pratiques choisies sur la base du récit, de l'intuition et de la pression des pairs. J'applique aux décisions opérationnelles le même standard qu'à une étude clinique : que dit réellement l'évidence répliquée ?",
-    'vision.manifesto': "Ce n'est pas un rejet du jugement — c'est une exigence que ce jugement soit calibré. Hypothèses formulées. Priors mis à jour. Tailles d'effet vérifiées au regard de leur pertinence opérationnelle, pas seulement de leur significativité statistique.",
-    'vision.v1.title': "Tailles d'effet, pas anecdotes",
-    'vision.v1.desc':  "Les biographies de fondateurs ne sont pas des preuves. Les études de cas sont au mieux des hypothèses. Les interventions sont évaluées sur des tailles d'effet répliquées sur des échantillons hétérogènes.",
-    'vision.v2.title': 'Pas de cadres infalsifiables',
-    'vision.v2.desc':  "Tests de personnalité sans validité prédictive. Programmes de transformation sans résultat mesurable. Culture decks sans responsabilisation. Ces approches n'ont pas leur place ici.",
-    'vision.v3.title': 'Mise à jour bayésienne',
-    'vision.v3.desc':  "Les croyances préalables sont formulées explicitement et révisées proportionnellement à la force des nouvelles preuves. La première étude est une hypothèse. Une dixième réplication indépendante se rapproche d'une politique.",
-    'vision.v4.title': 'Pertinence clinique vs p-values',
-    'vision.v4.desc':  '"Statistiquement significatif" ne signifie pas "opérationnellement pertinent". Une augmentation absolue du risque de 0,1% qui "double votre risque" ne vaut pas une réorganisation.',
-    'vision.v5.title': 'Réplication avant adoption',
-    'vision.v5.desc':  "Les tailles d'effet initiales diminuent systématiquement avec les réplications ultérieures (decline effect). Nous n'implémentons pas de pratiques parce qu'un TED talk était convaincant.",
-    'vision.v6.title': "Le biais de publication est la norme",
-    'vision.v6.desc':  "Les résultats positifs sont publiés. Les résultats négatifs sont classés. En recherche managériale comme en médecine, la littérature visible surestime les effets par construction. À ajuster en conséquence.",
-    'vision.blog_link': 'Lire l\'argument complet sur le blog →',
-
-    'about.label':   'Myself',
-    'about.h2':      'Lionel Arnaud',
-    'about.role':    'Dirigeant opérationnel · Biotech & Deeptech',
-    'about.linkedin': 'Voir le profil LinkedIn',
-    'about.bio1':    "Dix ans de direction opérationnelle en biotech et deeptech — dont Biomemory (stockage de données sur ADN), où il a construit l'infrastructure opérationnelle de l'entreprise dès les premiers stades. Expert pour Agoranov (premier incubateur deeptech de Paris) et le programme EIC Accelerator du Conseil Européen de l'Innovation.",
-    'about.bio2':    "Formé à la conception des essais cliniques (Université Johns Hopkins) et à l'informatique (Harvard CS50X), diplômé de l'Université Paris Dauphine. La même rigueur épistémologique qu'il applique dans la due diligence scientifique — distinguer probabilité a priori, taille d'effet et réplication du bruit statistique — est ce qu'il apporte aux mandats opérationnels.",
-    'about.bio3':    "Bilingue français–anglais. Basé à Paris. Disponible pour des mandats à distance et sur site en France et en Europe.",
-
-    'book.label':  'Prochaine étape',
-    'book.h2':     'Réserver un appel découverte',
-    'book.intro':  "Trente minutes. Pas de deck. Une conversation structurée sur l'état actuel de vos opérations et ce à quoi elles doivent ressembler dans six mois.",
-    'book.cta':    'Planifier un appel de 30 min',
-    'book.or':     'ou écrire à',
-    'book.note':   "Je réponds dans un délai d'un jour ouvré. Appels disponibles en français et en anglais.",
-
-    'faq.label':   'Questions',
-    'faq.h2':      'Questions fréquentes',
-    'faq.q1':      'Qui est un client typique ?',
-    'faq.a1':      "Des startups deeptech ou biotech en Série A à C — typiquement 10 à 80 personnes — où le CEO fait du travail opérationnel qui devrait être délégué, mais où recruter un C-suite à plein temps est prématuré ou indésirable.",
-    'faq.q2':      "Quelle est la durée minimale d'engagement ?",
-    'faq.a2':      "3 mois. La plupart des mandats durent 9 à 18 mois. L'objectif est toujours de me rendre inutile : construire le processus, former l'équipe, transférer.",
-    'faq.q3':      'Pouvez-vous prendre plusieurs entreprises en même temps ?',
-    'faq.a3':      "Maximum deux mandats simultanément, pour préserver une disponibilité réelle. Un mandat en focus total est possible sur demande.",
-    'faq.q4':      'Travaillez-vous à distance ?',
-    'faq.a4':      "Les deux. Je m'intègre sur site durant les premières semaines de tout mandat et m'adapte ensuite au rythme de l'équipe. Disponibilité sur site : région parisienne. À distance : partout.",
-    'faq.q5':      'Que signifie concrètement "fondé sur les preuves" ?',
-    'faq.a5':      "Cela signifie que je n'implémenterai pas un cadre de management parce qu'il est à la mode. Je ne recommanderai pas un outil parce qu'un conférencier l'a vanté. Les décisions sont ancrées dans des preuves répliquées, des hypothèses formulées et des résultats mesurables. Plus de détails sur le blog.",
-    'faq.q6':      'Quel est le coût ?',
-    'faq.a6':      "La tarification est structurée en honoraires mensuels proportionnels au périmètre et au taux d'implication. Contactez-moi pour une proposition délimitée — l'appel découverte est gratuit.",
-
-    'footer.copy':  '© 2026 Dinnizer SAS — Tous droits réservés.',
-
-    'blog.label':  'Insights',
-    'blog.h2':     'Blog',
-    'blog.intro':  "Articles de fond sur le management fondé sur les preuves, les opérations deeptech et l'épistémologie des décisions d'entreprise.",
-    'blog.empty':  "Aucun article pour l'instant.",
-
+    'services.s4.desc': 'Suivi des contrats et du portefeuille de propriété intellectuelle. Préparation des levées de fonds et coordination des avocats, conseils en brevets et spécialistes réglementaires.',
+    'services.s5.title': 'Administration & Moyens généraux',
+    'services.s5.desc': 'Organisation administrative, fournisseurs, locaux et assurances. Documents sociaux, échéances déclaratives et préparation des assemblées générales.',
+    'services.s6.title': 'Informatique & Automatisation',
+    'services.s6.desc': 'Infrastructure, gestion des accès et pratiques de sécurité. Automatisation des tâches, avec l’IA lorsqu’elle est utile, et coordination des obligations de protection des données.',
+    'services.s7.title': 'ERP & Outils de gestion',
+    'services.s7.desc': 'Déploiement et personnalisation d’Odoo. Intégration des outils de gestion clients, produits et qualité. Choix des solutions et préparation des migrations.',
+    'services.s8.title': 'Équipes & Prestataires',
+    'services.s8.desc': 'Organisation, plan de recrutement et répartition des responsabilités. Accompagnement des managers, objectifs partagés et suivi des fournisseurs et sous-traitants.',
+    'services.runbuild': '<strong>Gérer le quotidien et préparer la suite.</strong> Je mène les projets de structuration tout en assurant la continuité des opérations. Votre entreprise doit pouvoir évoluer sans s’arrêter.',
+    'how.label': 'Notre collaboration',
+    'how.h2': 'Une mission structurée en trois étapes',
+    'how.step1.n': '01',
+    'how.step1.t': 'Découverte',
+    'how.step1.d': 'Un échange de 30 minutes sur votre entreprise, vos priorités opérationnelles et votre calendrier, pour déterminer si mon intervention est adaptée.',
+    'how.step2.n': '02',
+    'how.step2.t': 'Cadrage de la mission',
+    'how.step2.d': 'Une proposition écrite précise les responsabilités, les objectifs, la disponibilité, les honoraires et les points de revue. Les attentes sont claires avant de démarrer.',
+    'how.step3.n': '03',
+    'how.step3.t': 'Intégration et exécution',
+    'how.step3.d': 'Je rejoins votre équipe, pilote les fonctions convenues et fais un point hebdomadaire avec le dirigeant. Le pouvoir de décision et les modalités d’arbitrage sont fixés ensemble.',
+    'how.note': 'Les missions démarrent à trois mois. Périmètre, disponibilité et points de revue sont convenus à l’avance. J’accompagne au maximum deux entreprises simultanément.',
+    'vision.label': 'Ma méthode de décision',
+    'vision.h2': 'Management fondé sur les preuves',
+    'vision.intro': 'Une bonne décision combine les meilleures recherches disponibles, les données de votre entreprise et l’expérience du terrain. Je formule les hypothèses, mesure les résultats utiles et ajuste les choix lorsque les faits évoluent.',
+    'vision.manifesto': 'Distinguer ce que nous savons, ce que nous supposons et ce qui nous ferait changer d’avis. Agir avec les informations disponibles, puis vérifier le résultat.',
+    'vision.v1.title': 'Des résultats, pas des anecdotes',
+    'vision.v1.desc': 'Une réussite peut inspirer une idée sans démontrer un lien de cause à effet. Je recherche des résultats mesurables et des données pertinentes pour votre situation.',
+    'vision.v2.title': 'Des objectifs vérifiables',
+    'vision.v2.desc': 'Avant d’introduire un processus ou un outil, nous définissons le problème, le bénéfice attendu et la manière de l’évaluer. Une méthode doit démontrer son utilité.',
+    'vision.v3.title': 'Réviser les hypothèses',
+    'vision.v3.desc': 'Tout plan repose sur des hypothèses de coûts, de délais et de comportements. Nous les rendons explicites et les révisons à mesure que les informations arrivent.',
+    'vision.v4.title': 'Un impact concret',
+    'vision.v4.desc': 'Un résultat statistiquement significatif n’est pas forcément utile à l’entreprise. Nous comparons le bénéfice attendu au coût, à l’effort, à l’incertitude et au risque.',
+    'vision.v5.title': 'Tester avant de généraliser',
+    'vision.v5.desc': 'Des réplications indépendantes renforcent la confiance. Lorsque les données sont limitées, mieux vaut un essai proportionné et des critères de revue clairs qu’un déploiement sans réserve.',
+    'vision.v6.title': 'Chercher les données manquantes',
+    'vision.v6.desc': 'Les réussites publiées ne racontent pas toute l’histoire. Je recherche aussi les résultats négatifs, les conflits d’intérêts et les limites des données avant de conclure.',
+    'vision.blog_link': 'Approfondir cette approche sur le blog →',
+    'about.label': 'Myself',
+    'about.h2': 'Lionel ARNAUD',
+    'about.role': 'Dirigeant opérationnel · Biotech & Deeptech',
+    'about.linkedin': 'Voir mon profil LinkedIn ↗',
+    'about.tag1': 'Direction opérationnelle',
+    'about.tag2': 'Financements non dilutifs',
+    'about.tag3': 'Outils de gestion',
+    'about.tag4': 'Paris · France & Europe',
+    'about.bio1': 'J’apporte dix ans de direction opérationnelle en biotech et deeptech, notamment chez Biomemory, spécialiste du stockage de données sur ADN, où j’ai construit l’infrastructure opérationnelle. Mon parcours comprend également des missions d’expertise pour Agoranov et le programme EIC Accelerator du Conseil européen de l’innovation.',
+    'about.bio2': 'Diplômé de l’Université Paris Dauphine, j’ai complété mon parcours par des formations à la conception des essais cliniques à Johns Hopkins et à l’informatique avec le programme CS50x de Harvard. Mon approche relie rigueur scientifique et mise en œuvre concrète.',
+    'about.bio3': 'Basé à Paris, je travaille en français et en anglais, à distance et sur site en France et en Europe.',
+    'book.label': 'Prochaine étape',
+    'book.h2': 'Parlons de vos priorités',
+    'book.intro': 'Où en est votre entreprise et que souhaitez-vous faire évoluer ? En 30 minutes, échangeons sur vos priorités et sur l’aide que je peux vous apporter. Aucune préparation nécessaire.',
+    'book.cta': 'Réserver un appel gratuit de 30 minutes',
+    'book.or': 'ou écrivez-moi',
+    'book.note': 'Échanges en français ou en anglais. Je réponds aux demandes sous un jour ouvré.',
+    'faq.label': 'Questions',
+    'faq.h2': 'Avant de travailler ensemble',
+    'faq.q1': 'À quelles entreprises vous adressez-vous ?',
+    'faq.a1': 'Aux entreprises deeptech et biotech de série A à C, généralement de 10 à 80 personnes. Le dirigeant a besoin de déléguer le pilotage opérationnel, sans nécessairement recruter un cadre dirigeant à temps plein.',
+    'faq.q2': 'Quelle est la durée minimale d’une mission ?',
+    'faq.a2': 'La durée minimale est de trois mois. Elle dépend de vos priorités et figure dans la proposition. L’objectif est de structurer les processus, accompagner votre équipe et préparer une passation claire.',
+    'faq.q3': 'Pouvez-vous accompagner plusieurs entreprises ?',
+    'faq.a3': 'Au maximum deux missions simultanées. La disponibilité hebdomadaire est convenue avant de démarrer. Une mission exclusive peut être envisagée selon vos besoins.',
+    'faq.q4': 'Travaillez-vous à distance ?',
+    'faq.a4': 'À distance et sur site. Basé à Paris, j’interviens en France et en Europe. Les déplacements et la présence auprès de l’équipe sont convenus pour chaque mission.',
+    'faq.q5': 'Que signifie « fondé sur les preuves » en pratique ?',
+    'faq.a5': 'Je confronte les recherches disponibles aux données de votre entreprise et à l’expérience du terrain. Nous formulons les hypothèses, définissons des résultats mesurables et revoyons les décisions lorsque de nouvelles informations apparaissent.',
+    'faq.q6': 'Comment sont fixés les honoraires ?',
+    'faq.a6': 'Les honoraires mensuels dépendent du périmètre et du temps consacré à la mission. Une proposition détaillée est établie après notre échange. L’appel découverte est gratuit.',
+    'footer.copy': '© 2026 Dinnizer SAS — Tous droits réservés.',
+    'blog.label': 'Analyses',
+    'blog.h2': 'Blog',
+    'blog.intro': 'Analyses sur le management fondé sur les preuves, les opérations deeptech et la qualité des décisions. Les articles sont actuellement publiés en anglais.',
+    'blog.empty': 'Aucun article pour l’instant.',
     'nav.back_blog': '← Blog',
-
-    'page.home':   'Dinnizer — Deputy CEO freelance pour le deeptech',
-    'page.blog':   'Blog — Dinnizer',
-  }
+    'page.home': 'Dinnizer — Direction générale à temps partagé en deeptech',
+    'page.blog': 'Blog — Dinnizer',
+  },
 };
 
 const DEFAULT_LANG = 'en';
 
-/* ─── i18n engine ─── */
 function setLang(lang) {
-  if (!TRANSLATIONS[lang]) return;
-  document.documentElement.lang = lang;
-  localStorage.setItem('dinnizer-lang', lang);
-
+  if (!Object.hasOwn(TRANSLATIONS, lang)) lang = DEFAULT_LANG;
+  // Articles retain their original language; only the surrounding UI changes.
+  document.documentElement.lang = document.body.dataset.contentLang || lang;
+  try { localStorage.setItem('dinnizer-lang', lang); } catch { /* Storage may be blocked. */ }
   document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    const val = TRANSLATIONS[lang][key];
+    const val = TRANSLATIONS[lang][el.getAttribute('data-i18n')];
     if (val === undefined) return;
-    if (el.hasAttribute('data-i18n-html')) {
-      el.innerHTML = val;
-    } else {
-      el.textContent = val;
-    }
+    if (el.hasAttribute('data-i18n-html')) el.innerHTML = val;
+    else el.textContent = val;
+    el.lang = lang;
   });
-
-  document.querySelectorAll('[data-i18n-title]').forEach(() => {
-    const key = document.querySelector('[data-i18n-title]')?.getAttribute('data-i18n-title');
-    const val = key && TRANSLATIONS[lang][key];
-    if (val) document.title = val;
-  });
-
+  const titleKey = document.querySelector('[data-i18n-title]')?.getAttribute('data-i18n-title');
+  if (titleKey && TRANSLATIONS[lang][titleKey]) document.title = TRANSLATIONS[lang][titleKey];
   document.querySelectorAll('.lang-toggle button').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.lang === lang);
+    const active = btn.dataset.lang === lang;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const saved = localStorage.getItem('dinnizer-lang') || DEFAULT_LANG;
+  let saved = DEFAULT_LANG;
+  try { saved = localStorage.getItem('dinnizer-lang') || DEFAULT_LANG; } catch { /* Use English. */ }
   setLang(saved);
-
   document.querySelectorAll('.lang-toggle button').forEach(btn => {
     btn.addEventListener('click', () => setLang(btn.dataset.lang));
   });
-
-  /* Mobile nav */
   const hamburger = document.querySelector('.nav-hamburger');
-  const navLinks  = document.querySelector('.nav-links');
+  const navLinks = document.querySelector('.nav-links');
   if (hamburger && navLinks) {
+    const closeMenu = () => {
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    };
     hamburger.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', open);
+      hamburger.setAttribute('aria-expanded', String(navLinks.classList.toggle('open')));
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+        closeMenu();
+        hamburger.focus();
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!event.target.closest('nav')) closeMenu();
     });
   }
-
-  /* Smooth FAQ accordion */
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-    });
-  });
-
 });
