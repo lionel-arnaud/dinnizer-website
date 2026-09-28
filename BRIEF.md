@@ -4,7 +4,9 @@
 
 Build and deploy a public-facing website at **www.dinnizer.com**, hosted on **serverannah** behind the existing **Caddy** reverse-proxy alongside `aumenuilya.fr`, `tabletop-timer.com`, etc.
 
-The site markets **Dinnizer SAS**'s freelance **Deputy CEO** consulting offer:
+The site markets **Dinnizer SAS**'s independent, hands-on support for current CEOs, drawing on Lionel's senior biotech experience. Clients can engage him for a defined operational need or support across several functions. The site should sell his capabilities and delivery as a service to existing leadership teams, rather than an executive title.
+
+Scope:
 operational / internal management mandates (HR, Finance, Admin, Legal, IP, Regulatory, Purchasing, Cash, non-dilutive funding, ERP deployment such as Odoo, sysadmin, AI automations, team/subcontractor supervision — both "run" and "build" modes).
 
 The editorial line is **evidence-based entrepreneurship**: rigorous, corporate, no bullshit — no personality tests, no market-timing claims, results traceable to evidence.

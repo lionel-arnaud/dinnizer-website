@@ -4,7 +4,7 @@ Source for [www.dinnizer.com](https://www.dinnizer.com) — the public site for 
 
 ## What this is
 
-A static HTML/CSS/JS bilingual (EN/FR) website for a fractional Deputy CEO consultancy.
+A static HTML/CSS/JS bilingual (EN/FR) website for Dinnizer's hands-on support to biotech and deep-tech CEOs: finance, funding, HR, team leadership, and operations, drawing on Lionel ARNAUD's senior biotech experience.
 Blog posts are written in Markdown and compiled to HTML at deploy time via `pandoc`.
 
 ## Structure

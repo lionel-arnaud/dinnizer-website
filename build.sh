@@ -138,7 +138,7 @@ cat >> "$BLOG_OUT/index.html" << 'FOOTER'
   </div>
 </footer>
 
-<script src="../js/i18n.js?v=20260927" defer></script>
+<script src="../js/i18n.js?v=20260928" defer></script>
 </body>
 </html>
 FOOTER

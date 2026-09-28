@@ -81,4 +81,4 @@ Good operational leadership needs both action and revision: make the best decisi
 
 ---
 
-*Lionel ARNAUD provides fractional Deputy CEO services through Dinnizer SAS, supporting operational leadership in deep-tech and biotech. [Discuss your operational priorities](../../#book) or write to [contact@dinnizer.com](mailto:contact@dinnizer.com).*
+*Lionel ARNAUD draws on senior roles in biotech to provide hands-on support to CEOs through Dinnizer SAS, across finance, funding, HR, team leadership, and operations. [Discuss your operational priorities](../../#book) or write to [contact@dinnizer.com](mailto:contact@dinnizer.com).*
